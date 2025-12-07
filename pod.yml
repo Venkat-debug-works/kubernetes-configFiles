@@ -4,7 +4,7 @@ metadata:
   name: my-app-pod
 spec:
   containers:
-    - name: my-app-containers
-      image: my-app-image:latest
+    - name: nginx
+      image: nginx:1.14.2
       ports:
         - containerPort: 80
