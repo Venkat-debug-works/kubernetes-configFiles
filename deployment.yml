@@ -1,0 +1,21 @@
+apiVersion: vattakayu.com/v1
+kind: Deployment
+metadata:
+  name: first-deployment
+  labels:
+    app: java-app
+spec:
+  replicas: 2
+  selector:
+    matchlables:
+      app: java-app
+      template:
+        metadata:
+        labels:
+          app: java -app
+        spec:
+          containers:
+            - name: java-container
+              image: openjdk:8
+              ports:
+                - containerPort: 8080
