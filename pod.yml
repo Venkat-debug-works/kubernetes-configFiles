@@ -1,10 +1,10 @@
-api-version: v1
-kind: pod
+apiVersion: v1
+kind: Pod
 metadata:
   name: my-app-pod
-  spec:
-    containers:
-      - name: my-app-containers
-        image: my-app-image:latest
-        ports:
-          - containerport: 80
+spec:
+  containers:
+    - name: my-app-containers
+      image: my-app-image:latest
+      ports:
+        - containerPort: 80
